@@ -1,9 +1,15 @@
-/*asterisk wildcard selector to override default stlyes addedby the browser*/
-{
+/*asterisk wildcard selector to override default stlyes added by the browser*/
+*{
     padding: 0;
     margin: 0;
     box-sizing:border-box;}
-
+/*General Stlyes*/
+body {
+min-height: 100vh;
+display:flex;
+/*Generic project stlyes*/
+color:3a3a3a;
+}
 /*Header*/
 header {
 background-color: lightcoral;
@@ -11,7 +17,10 @@ background-color: lightcoral;
 /*Main*/
 main {
     background-color: lightblue;
+/*Make  main element take up any surplus space to push footer down*/
+flex: 1 0 auto;
 }
+
 /*Footer*/
 footer  {
     background-color:orange;
